@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  nodejs_api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: nodejs_api_container
+    image: sleepinglotus/nodejs_api_2
+    ports:
+      - "3444:3444"
+    depends_on:
+      - mongodb
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - "27017:27017"

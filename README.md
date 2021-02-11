@@ -18,6 +18,9 @@ First for all, similar to git commands , all the docker commands will be startin
 - docker rmi --> removes an image
 - docker push --> pushes the image into a registry
 - docker pull --> pulls the image from a registry
+- docker network --> the container networks
+  - ls --> lists all the networks
+  - inspect network_name --> lists the network details
 
 For the Docker Compose file , it is similar to what we have inserted within the command interface, but just makes life simpler
 
